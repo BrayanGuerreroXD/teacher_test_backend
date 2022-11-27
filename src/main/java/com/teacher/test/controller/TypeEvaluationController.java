@@ -40,7 +40,7 @@ public class TypeEvaluationController {
     }
 
     @PostMapping
-    public TypeEvaluation postUsers(@RequestBody TypeEvaluation typeEvaluation) {
+    public TypeEvaluation postTypeEvaluation(@RequestBody TypeEvaluation typeEvaluation) {
         typeEvaluationRepo.save(typeEvaluation);
         return typeEvaluation;
     }
