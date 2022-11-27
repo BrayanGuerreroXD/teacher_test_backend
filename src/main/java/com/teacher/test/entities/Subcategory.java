@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.OneToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.Column;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -21,7 +23,9 @@ public class Subcategory {
     private Integer id;
 
     @OneToOne
+    @JoinColumn(name = "criterion_id")
     private Criterion criterion;
 
+    @Column(name = "question")
     private String question;
 }
