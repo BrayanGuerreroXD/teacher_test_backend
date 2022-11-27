@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Column;
 import javax.persistence.Table;
 
 import java.sql.Date;
@@ -21,7 +22,9 @@ public class Inscription {
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="inscription_id_seq")
     private Integer id;
 
+    @Column(name = "validation_inscription")
     private boolean validationInscription;
 
+    @Column(name = "validation_date")
     private Date validationDate;
 }
