@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.OneToOne;
 import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -22,8 +23,10 @@ public class InscriptionUser {
     private Integer id;
 
     @ManyToOne
+    @JoinColumn(name = "inscription_id")
     private Inscription inscription;
 
     @OneToOne
+    @JoinColumn(name = "user_id")
     private User user;
 }
