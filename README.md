@@ -10,10 +10,10 @@ The administrator has the ability to activate the registration dates and in turn
 
 The project was developed with:
 
--Logo tools
+![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+
 
 Employing the Rest API architecture which consists of:
 
--Photo architecture
-
-Translated with www.DeepL.com/Translator (free version)
+-Photo architecture (falta mejorar)
