@@ -54,9 +54,9 @@ public class CategoryController {
 
         if (categoryCurrent.isPresent()) {
             Category categoryReturn = categoryCurrent.get();
-            categoryRepo.save(categoryReturn);
             categoryReturn.setCriterion(category.getCriterion());
             categoryReturn.setCategoryName(category.getCategoryName());
+            categoryRepo.save(categoryReturn);
             return categoryReturn;
         }
 
