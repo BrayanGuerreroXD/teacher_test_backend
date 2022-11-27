@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.OneToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -23,9 +25,12 @@ public class Assessment {
     private Integer id;
 
     @OneToOne
+    @JoinColumn(name="typeevaluation_id")
     private TypeEvaluation typeEvaluation;
 
+    @Column(name="assessment_date")
     private Date assessmentDate;
 
+    @Column(name="assessment_semester")
     private String assessmentSemester;
 }
