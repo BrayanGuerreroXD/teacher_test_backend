@@ -19,7 +19,7 @@ import java.util.Optional;
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/users")
 public class UserController {
 
     @Autowired
