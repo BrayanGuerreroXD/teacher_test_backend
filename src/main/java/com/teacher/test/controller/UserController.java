@@ -55,7 +55,11 @@ public class UserController {
         if (userCurrent.isPresent()) {
             User userReturn = userCurrent.get();
             userReturn.setUserName(user.getUserName());
+            userReturn.setUserCode(user.getUserCode());
+            userReturn.setIdentifyCardNumber(user.getIdentifyCardNumber());
             userReturn.setEmail(user.getEmail());
+            userReturn.setPassword(user.getPassword());
+            userReturn.setAdmin(user.isAdmin());
             userRepo.save(userReturn);
             return userReturn;
         }
