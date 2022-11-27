@@ -53,6 +53,7 @@ public class TypeEvaluationController {
         if (typeEvaluationCurrent.isPresent()) {
             TypeEvaluation typeEvaluationReturn = typeEvaluationCurrent.get();
             typeEvaluationReturn.setDescription(typeEvaluation.getDescription());
+            typeEvaluationRepo.save(typeEvaluationReturn);
             return typeEvaluationReturn;
         }
 
