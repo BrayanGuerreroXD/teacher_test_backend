@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Column;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -19,5 +20,6 @@ public class TypeEvaluation {
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="typeevaluation_id_seq")
     private Integer id;
 
+    @Column(name="description")
     private String description;
 }
