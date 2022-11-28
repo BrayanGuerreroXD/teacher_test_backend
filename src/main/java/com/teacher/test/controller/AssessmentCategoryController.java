@@ -1,9 +1,7 @@
 package com.teacher.test.controller;
 
 import com.teacher.test.entities.AssessmentCategory;
-import com.teacher.test.entities.Category;
 import com.teacher.test.repository.AssessmentCategoryRepository;
-import com.teacher.test.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
